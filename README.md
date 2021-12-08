@@ -1,16 +1,19 @@
-# banking_app_ui
 
-A new Flutter project.
+# Banking App Ui
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - [My Linkedin](https://www.linkedin.com/in/samuel-arqu%C3%ADmedes-p%C3%A9rez-jim%C3%A9nez-1387a018b/)
+ - [Torre Genome](https://torre.co/en/perezjsamuel)
+ -  Email: [perezjsamuel@gmail.com](mailto:admin@cloudhadoop.com)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+

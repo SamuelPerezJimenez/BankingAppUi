@@ -1,16 +1,15 @@
+import 'package:flutter/material.dart';
+
 import 'package:animate_do/animate_do.dart';
+import 'package:iconsax/iconsax.dart';
+
 import 'package:banking_app_ui/pages/send_money.dart';
 import 'package:banking_app_ui/widgets/transfer_button.dart';
 import 'package:banking_app_ui/widgets/transfer_item.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
-import 'package:iconsax/iconsax.dart';
 import 'package:page_transition/page_transition.dart';
 
 class Transfers extends StatefulWidget {
-  Transfers({Key? key}) : super(key: key);
+  const Transfers({Key? key}) : super(key: key);
 
   @override
   _TransfersState createState() => _TransfersState();
@@ -162,16 +161,15 @@ class _TransfersState extends State<Transfers> {
               onTap: () => Navigator.push(
                   context,
                   PageTransition(
-                      type: PageTransitionType.fade, child: SendMoney()))),
+                      type: PageTransitionType.fade,
+                      child: const SendMoney()))),
           const Spacer(),
           TransferButton(
             iconData: Icons.south_west,
             text: 'Received',
             isOpened: false,
             color: const Color(0xffD1E8AE),
-            onTap: () {
-              print('object');
-            },
+            onTap: () {},
           ),
           const Spacer(),
           TransferButton(

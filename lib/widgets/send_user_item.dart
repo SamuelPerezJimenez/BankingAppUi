@@ -16,7 +16,7 @@ class SendUserItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 20),
+      margin: const EdgeInsets.only(right: 20),
       width: 150,
       height: 50,
       child: Container(

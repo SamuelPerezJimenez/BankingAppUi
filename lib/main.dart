@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:banking_app_ui/pages/transfers.dart';
 
 //ui: https://www.instagram.com/p/CN2YpJ0g_Bv/
@@ -11,9 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Material App',
+        title: 'Banking App',
         home: Transfers());
   }
 }

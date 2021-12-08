@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
 class NumPad extends StatefulWidget {
-  NumPad({Key? key}) : super(key: key);
+  const NumPad({Key? key}) : super(key: key);
 
   @override
   _NumPadState createState() => _NumPadState();
@@ -13,10 +13,11 @@ class _NumPadState extends State<NumPad> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
+      margin: const EdgeInsets.only(top: 20),
       child: GridView.count(
         crossAxisCount: 3,
         children: [
+          //TODO: perform efficiently
           NumPadItem(
             isNumber: true,
             number: 1,
@@ -55,28 +56,28 @@ class _NumPadState extends State<NumPad> {
           ),
           NumPadItem(
             isNumber: false,
-            icon: Icon(
+            icon: const Icon(
               Icons.backspace,
               color: Colors.grey,
             ),
-            backgorundColor: Color(0xffEDEDED),
+            backgorundColor: const Color(0xffEDEDED),
           ),
           NumPadItem(
             isNumber: true,
             number: 0,
-            onTap: () => print('0'),
+            onTap: () {},
           ),
           NumPadItem(
             isNumber: false,
             number: 3,
-            icon: Icon(
+            icon: const Icon(
               Icons.check,
               color: Colors.white,
             ),
             onTap: () => Navigator.pushReplacement(
                 context,
                 PageTransition(
-                    type: PageTransitionType.fade, child: MoneySent())),
+                    type: PageTransitionType.fade, child: const MoneySent())),
           ),
         ],
       ),
@@ -104,13 +105,14 @@ class NumPadItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: SizedBox(
         height: 20,
         child: Center(
             child: isNumber
                 ? Text(
                     number.toString(),
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.bold),
                   )
                 : Container(
                     height: 70,

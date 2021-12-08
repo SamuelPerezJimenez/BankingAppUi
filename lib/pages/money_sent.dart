@@ -1,7 +1,8 @@
-import 'package:animate_do/animate_do.dart';
-import 'package:banking_app_ui/pages/transfers.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+
+import 'package:animate_do/animate_do.dart';
+
+import 'package:banking_app_ui/pages/transfers.dart';
 import 'package:page_transition/page_transition.dart';
 
 class MoneySent extends StatelessWidget {
@@ -21,8 +22,9 @@ class MoneySent extends StatelessWidget {
                 onPressed: () => Navigator.pushReplacement(
                     context,
                     PageTransition(
-                        type: PageTransitionType.fade, child: Transfers())),
-                icon: Icon(Icons.close)),
+                        type: PageTransitionType.fade,
+                        child: const Transfers())),
+                icon: const Icon(Icons.close)),
           )
         ],
       ),
@@ -33,7 +35,7 @@ class MoneySent extends StatelessWidget {
           children: [
             FadeInDownBig(
               duration: const Duration(milliseconds: 600),
-              child: CircleAvatar(
+              child: const CircleAvatar(
                 maxRadius: 36,
                 backgroundColor: Colors.white,
                 child: Icon(
@@ -43,10 +45,10 @@ class MoneySent extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 24),
+            const SizedBox(height: 24),
             FadeInUpBig(
               duration: const Duration(milliseconds: 600),
-              child: Text(
+              child: const Text(
                 'Money sent sucessfully!',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
